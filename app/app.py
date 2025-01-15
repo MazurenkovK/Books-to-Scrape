@@ -4,7 +4,7 @@ import pandas as pd
 import schedule
 import time
 
-
+# Создаем функцию для сбора данных о книгах с сайта
 def fetch_books_data():
     base_url = 'http://books.toscrape.com/catalogue/.html'
     book_list = []
