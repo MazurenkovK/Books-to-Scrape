@@ -106,7 +106,7 @@ def fetch_books_data():
     print("Данные успешно собраны и сохранены в 'books_data.csv'.")
 
 # Настраиваем автоматическую выгрузку данных по времени
-schedule.every().day.at("03:57").do(fetch_books_data)
+schedule.every().day.at("19:00").do(fetch_books_data)
 
 while True:
     schedule.run_pending()
